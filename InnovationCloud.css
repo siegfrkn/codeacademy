@@ -1,0 +1,138 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 10px;
+}
+
+
+/* Header */
+.header {
+  height: 800px;
+  text-align: center;
+  background-image: url("http://images.huffingtonpost.com/2016-05-16-1463362092-2210264-smarthome.jpg");
+  background-size: cover;
+}
+
+.header .container {
+	position: relative;
+	top: 200px;
+}
+
+.header h1 {
+	font-size: 80px;
+	line-height: 100px;
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+
+@media (min-width:850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p {
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+	background: #117bff;
+	cursor: pointer;
+	transition: background .5s;
+}
+
+
+/* Nav */
+.nav {
+  background: #000000;
+  color: #FFFFFF;
+	list-style: none;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.nav .container p {
+  display: inline;
+  margin: 10px 10px 10px 10px;
+}
+
+.nav .container p:first-child {
+  margin: 10px 10px 10px 10%;
+}
+
+
+/* Main */
+.main {
+  display: inline;
+  vertical-align: middle;
+}
+
+.main .container {
+  clear: left;
+	margin: 80px auto;
+  display: inline;
+}
+
+.main .image {
+  height: 100px;
+  margin: 80px 60px 0 20%;
+  vertical-align: middle;
+  float: left;
+}
+
+/* Jumbotron */
+.jumbotron {
+	height: 600px;
+	text-align: right;
+  background-image: url("http://cdn.pcwallart.com/images/suburban-street-at-night-wallpaper-3.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 220px;
+}
+
+
+/* Footer */
+.footer {
+	font-size: 14px;
+  padding: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
